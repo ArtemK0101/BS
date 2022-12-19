@@ -2,7 +2,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="g.ccs">
 </head>
-<body>
+<body style="background-color:black">
     <header>
 
 
@@ -72,25 +72,36 @@
             </button>
           </div>
     </section>
-    <div class="container text-center" style=" height: 200px; margin-top: 100px; font-size: large; font-weight: bold;">
-      <div class="row">
-        <div class="col" style="background-color: orangered; border-radius: 20px;">
-          Огонь
-        </div>
-        <div class="col" style="background-color: rgb(51, 0, 255); border-radius: 20px;">
-          Вода
-        </div>
-      </div>
-      <div class="row" style="margin-top: 20px;">
-        <div class="col" style="background-color: rgb(180, 101, 16); border-radius: 20px; ">
-          Земля
-        </div>
-        <div class="col" style="background-color: rgb(191, 197, 19); border-radius: 20px;">
-          Молния
-        </div>
-        <div class="col" style="background-color: rgb(120, 233, 118); border-radius: 20px;">
-          Воздух
-        </div>
+ 
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Artem</td>
+              <td>Krutoy</td>
+              <td>@gm</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Red</td>
+              <td>Stevenkton</td>
+              <td>@gr</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Firebird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <footer class="page-footer font-small blue" style="background-color: black; color: white;">
@@ -99,7 +110,27 @@
       <div class="footer-copyright text-center py-3">© 2022 Road
       </div>
       <!-- Copyright -->
-
+      <script src="modal.js"></script>
+      <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" len="626" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" len="590">
+          <div class="modal-content" len="549">
+            <div class="modal-header" len="184">
+              <h5 class="modal-title" id="exampleModalLiveLabel" len="11" lang="ru" style="">Модальное название</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" len="0"></button>
+            </div>
+            <div class="modal-body" len="67">
+              <p len="44" lang="ru" style="">Ву-у-у, вы читаете этот текст в модале!</p>
+            </div>
+            <div class="modal-footer" len="178">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" len="5" lang="ru" style="">Закрывать</button>
+              <button type="button" class="btn btn-primary" len="12" lang="ru" style="">Сохранение изменений</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bd-example" len="142">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLive" len="25" lang="ru" style=""> Запустить демо-модальный </button>
+      </div>
     </footer>
 
 
